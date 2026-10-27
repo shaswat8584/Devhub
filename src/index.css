@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+  --color-bg: #0b0d12;
+  --color-surface: #151922;
+  --color-surface-hover: #252b38;
+  --color-primary: #8b5cf6;
+  --color-secondary: #22d3ee;
+  --color-text: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-border: #303440;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white;
+  }
+}
+
+@utility px-auto {
+    @apply px-6 md:px-12 lg:px-24 xl:px-40;
+}
