@@ -1,4 +1,4 @@
-const resources = [
+const details = [
   {
     id: 1,
     name: "React",
@@ -6,14 +6,18 @@ const resources = [
     category: "Frontend",
     url: "https://react.dev",
     icon: "Code2",
+    image:
+      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 2,
     name: "Tailwind CSS",
-    description: "Build modern interfaces quickly using utility-first CSS.",
+    description: "Build modern interfaces using utility-first CSS.",
     category: "Frontend",
     url: "https://tailwindcss.com",
     icon: "Palette",
+    image:
+      "https://images.unsplash.com/photo-1558655146-d09347e92766?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 3,
@@ -23,6 +27,8 @@ const resources = [
     category: "Frontend",
     url: "https://vite.dev",
     icon: "Zap",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 4,
@@ -32,6 +38,8 @@ const resources = [
     category: "Backend",
     url: "https://nodejs.org",
     icon: "Server",
+    image:
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 5,
@@ -41,6 +49,8 @@ const resources = [
     category: "Backend",
     url: "https://expressjs.com",
     icon: "Layers",
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 6,
@@ -50,15 +60,19 @@ const resources = [
     category: "Backend",
     url: "https://www.mongodb.com",
     icon: "Database",
+    image:
+      "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 7,
     name: "Supabase",
     description:
-      "Build apps with a database, authentication, storage, and APIs.",
+      "Build apps with databases, authentication, storage, and APIs.",
     category: "Backend",
     url: "https://supabase.com",
     icon: "Database",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 8,
@@ -67,6 +81,8 @@ const resources = [
     category: "AI/ML",
     url: "https://huggingface.co",
     icon: "Brain",
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 9,
@@ -76,6 +92,8 @@ const resources = [
     category: "AI/ML",
     url: "https://www.kaggle.com",
     icon: "ChartNoAxesCombined",
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 10,
@@ -84,6 +102,8 @@ const resources = [
     category: "AI/ML",
     url: "https://aistudio.google.com",
     icon: "Sparkles",
+    image:
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 11,
@@ -93,15 +113,19 @@ const resources = [
     category: "Design",
     url: "https://www.figma.com",
     icon: "Figma",
+    image:
+      "https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=900&q=80",
   },
   {
     id: 12,
     name: "Dribbble",
     description: "Discover creative portfolios and UI design inspiration.",
     category: "Design",
-    url: "https://dribbble.com",
+    url: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=900&q=80",
     icon: "Paintbrush",
+    image:
+      "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=900&q=80",
   },
 ];
 
-export default resources;
+export default details;

@@ -4,7 +4,7 @@ import Animated from "../components/Animated";
 const HeroSection = () => {
   return (
     <>
-      <section className="flex min-h-screen items-center overflow-hidden bg-bg">
+      <section className="flex md:min-h-screen min-h- items-center overflow-hidden bg-bg">
         <div className="mx-auto max-w-4xl px-6 text-center sm:px-8">
           <Animated y={0} delay={0.2}>
             <h1 className="text-4xl font-bold text-white md:text-5xl lg:text-6xl">
