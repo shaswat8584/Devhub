@@ -1,32 +1,3 @@
-// import * as Icons from "lucide-react";
-
-// export default function Cards({ resource }) {
-//   const Icon = Icons[resource.icon] || Icons.Code2;
-//   return (
-//     <div className="group w-100 h-64 mx-auto perspective-[1000px] cursor-pointer">
-//       <div className="relative w-full h-full transition-transform duration-500 transform-3d group-hover:transform-[rotateY(180deg)]">
-//         {/* Front Side */}
-//         <div className="absolute w-full h-full backface-hidden flex flex-col text-center items-center justify-center rounded-md bg-white border border-gray-200 text-zinc-950">
-//           <Icon className="mb-2 text-fuchsia-600" size={24} />
-//           <h1>Resource name: {resource.name}</h1>
-//           <p>Resource description: {resource.description}</p>
-//           <p>Resource category: {resource.category}</p>
-//           <a href={resource.url}>Resource url</a>
-//         </div>
-
-//         {/* Back Side */}
-//         <div className="absolute w-full h-full backface-hidden flex flex-col items-center justify-center rounded-md bg-indigo-600 text-white transform-[rotateY(180deg)]">
-//           <Icon className="mb-2 text-fuchsia-600" size={24} />
-//           <h1>Resource name: {resource.name}</h1>
-//           <p>Resource description: {resource.description}</p>
-//           <p>Resource category: {resource.category}</p>
-//           <a href={resource.url}>Resource url</a>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
 import * as Icons from "lucide-react";
 
 export default function Cards({ resource }) {
@@ -52,6 +23,8 @@ export default function Cards({ resource }) {
           <div className="flex items-center gap-3 pt-4">
             <Icon size={24} className="shrink-0 text-primary" />
             <h2 className=" text-lg font-semibold">{resource.name}</h2>
+             <p className="ml-auto text-sm text-muted"> • {resource.category}</p>
+
           </div>
         </div>
 
