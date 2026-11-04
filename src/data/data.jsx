@@ -1,22 +1,28 @@
+import { image } from "motion/react-client";
+
 const details = [
   // Frontend
   {
     id: 1,
     name: "React",
-    description: "A JavaScript library for building interactive user interfaces.",
+    description:
+      "A JavaScript library for building interactive user interfaces.",
     category: "Frontend",
     url: "https://react.dev",
     icon: "Atom",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee",
+    image:
+      "https://images.seeklogo.com/logo-png/65/1/react-logo-png_seeklogo-653380.png",
   },
   {
     id: 2,
     name: "Tailwind CSS",
-    description: "A utility-first CSS framework for rapidly building custom designs.",
+    description:
+      "A utility-first CSS framework for rapidly building custom designs.",
     category: "Frontend",
     url: "https://tailwindcss.com",
     icon: "Wind",
-    image: "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2",
+    image:
+      "https://logowik.com/content/uploads/images/tailwind-css7675.logowik.com.webp",
   },
   {
     id: 3,
@@ -25,18 +31,20 @@ const details = [
     category: "Frontend",
     url: "https://nextjs.org",
     icon: "Triangle",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image:
+      "https://logowik.com/content/uploads/images/nextjs2106.logowik.com.webp",
   },
 
   // Backend
   {
     id: 4,
     name: "Node.js",
-    description: "A JavaScript runtime for building scalable server-side applications.",
+    description:
+      "A JavaScript runtime for building scalable server-side applications.",
     category: "Backend",
     url: "https://nodejs.org",
     icon: "Server",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
+    image: "https://logowik.com/content/uploads/images/nodejs.jpg",
   },
   {
     id: 5,
@@ -45,45 +53,52 @@ const details = [
     category: "Backend",
     url: "https://expressjs.com",
     icon: "Network",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    image:
+      "https://i.pinimg.com/736x/83/1c/14/831c14fcebd3f448a0c3cbc0f69534fc.jpg",
   },
   {
     id: 6,
     name: "Postman",
-    description: "An API platform for designing, testing, and documenting APIs.",
+    description:
+      "An API platform for designing, testing, and documenting APIs.",
     category: "Backend",
     url: "https://www.postman.com",
     icon: "Send",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    image: "https://logowik.com/content/uploads/images/postman2461.jpg",
   },
 
   // AI/ML
   {
     id: 7,
     name: "Hugging Face",
-    description: "Explore machine learning models, datasets, and AI applications.",
+    description:
+      "Explore machine learning models, datasets, and AI applications.",
     category: "AI/ML",
     url: "https://huggingface.co",
     icon: "Brain",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    image:
+      "https://tse1.mm.bing.net/th/id/OIP.LiYrNygffDYTQ6VuafRSOAHaFl?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
     id: 8,
     name: "Kaggle",
-    description: "Discover datasets, participate in ML competitions, and learn data science.",
+    description:
+      "Discover datasets, participate in ML competitions, and learn data science.",
     category: "AI/ML",
     url: "https://www.kaggle.com",
     icon: "ChartNoAxesCombined",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    image:
+      "https://logowik.com/content/uploads/images/t_kaggle4255.logowik.com.webp",
   },
   {
     id: 9,
     name: "Google AI Studio",
-    description: "Experiment with Google's Gemini models and build AI-powered applications.",
+    description:
+      "Experiment with Google's Gemini models and build AI-powered applications.",
     category: "AI/ML",
     url: "https://aistudio.google.com",
     icon: "Sparkles",
-    image: "https://images.unsplash.com/photo-1676299081847-824916de030a",
+    image: "https://boluda.com/files/curso-google-ai-studio.gif",
   },
 
   // Design
@@ -94,27 +109,31 @@ const details = [
     category: "Design",
     url: "https://www.figma.com",
     icon: "Figma",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5",
+    image:
+      "https://logowik.com/content/uploads/images/figma459.logowik.com.webp",
   },
   {
     id: 11,
     name: "Dribbble",
-    description: "Discover creative work and design inspiration from designers worldwide.",
+    description:
+      "Discover creative work and design inspiration from designers worldwide.",
     category: "Design",
     url: "https://dribbble.com",
     icon: "Dribbble",
-    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb",
+    image: "https://logowik.com/content/uploads/images/dribbble.jpg",
   },
 
   // DevOps
   {
     id: 12,
     name: "Docker",
-    description: "Build, package, and run applications inside portable containers.",
+    description:
+      "Build, package, and run applications inside portable containers.",
     category: "DevOps",
     url: "https://www.docker.com",
     icon: "Container",
-    image: "https://images.unsplash.com/photo-1605745341112-85968b19335b",
+    image:
+      "https://logowik.com/content/uploads/images/docker-applicaton-development8084.logowik.com.webp",
   },
   {
     id: 13,
@@ -123,18 +142,21 @@ const details = [
     category: "DevOps",
     url: "https://github.com/features/actions",
     icon: "Workflow",
-    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498",
+    image:
+      "https://techblog.asia-quest.jp/hubfs/TechBlog/202210-02github-thum.png",
   },
 
   // Database
   {
     id: 14,
     name: "Supabase",
-    description: "An open-source backend platform with database, authentication, and storage.",
+    description:
+      "An open-source backend platform with database, authentication, and storage.",
     category: "Database",
     url: "https://supabase.com",
     icon: "Database",
-    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    image:
+      "https://logowik.com/content/uploads/images/supabase1597.logowik.com.webp",
   },
   {
     id: 15,
@@ -143,263 +165,263 @@ const details = [
     category: "Database",
     url: "https://www.mongodb.com",
     icon: "Database",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image:
+      "https://logowik.com/content/uploads/images/mongodb9740.logowik.com.webp",
   },
 
   // Tools
   {
     id: 16,
     name: "VS Code",
-    description: "A lightweight code editor with extensions, debugging, and Git integration.",
+    description:
+      "A lightweight code editor with extensions, debugging, and Git integration.",
     category: "Tools",
     url: "https://code.visualstudio.com",
     icon: "Code2",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image:
+      "https://tse3.mm.bing.net/th/id/OIP.Q2TfQfCAQpOV-iBuhDeybQAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
     id: 17,
     name: "Vite",
-    description: "A fast frontend build tool with a powerful development server.",
+    description:
+      "A fast frontend build tool with a powerful development server.",
     category: "Tools",
     url: "https://vite.dev",
     icon: "Zap",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
-  }, {
+    image:
+      "https://digitalpress.fra1.cdn.digitaloceanspaces.com/pnl5oqh/2022/12/1_In1BgimeWvX8_9NjKwoY2w.png",
+  },
+  {
     id: 18,
     name: "Vue.js",
-    description: "A progressive JavaScript framework for building user interfaces.",
+    description:
+      "A progressive JavaScript framework for building user interfaces.",
     category: "Frontend",
     url: "https://vuejs.org",
     icon: "Layers",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
+    image:
+      "https://images.teepublic.com/derived/production/designs/53097351_0/1699843215/i_p:c_ffffff,bnr_1,s_630,q_90.jpg",
   },
+
   {
     id: 19,
-    name: "Svelte",
-    description: "A compiler-based framework for building reactive web applications.",
-    category: "Frontend",
-    url: "https://svelte.dev",
-    icon: "Code2",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-  },
-  {
-    id: 20,
     name: "shadcn/ui",
-    description: "Beautifully designed, accessible, and customizable UI components.",
+    description:
+      "Beautifully designed, accessible, and customizable UI components.",
     category: "Frontend",
     url: "https://ui.shadcn.com",
     icon: "Component",
-    image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb",
+    image: "https://shadcn.com/og.jpg",
   },
   {
-    id: 21,
+    id: 20,
     name: "Framer Motion",
     description: "A production-ready motion library for React interfaces.",
     category: "Frontend",
     url: "https://motion.dev",
     icon: "Waves",
-    image: "https://images.unsplash.com/photo-1550745165-9bc0b252726f",
+    image:
+      "https://images.seeklogo.com/logo-png/40/1/framer-logo-png_seeklogo-405057.png",
   },
 
   // Backend
   {
-    id: 22,
-    name: "NestJS",
-    description: "A progressive Node.js framework for scalable server-side applications.",
-    category: "Backend",
-    url: "https://nestjs.com",
-    icon: "Server",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31",
-  },
-  {
-    id: 23,
+    id: 21,
     name: "FastAPI",
-    description: "A modern Python framework for building high-performance APIs.",
+    description:
+      "A modern Python framework for building high-performance APIs.",
     category: "Backend",
     url: "https://fastapi.tiangolo.com",
     icon: "Zap",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    image:
+      "https://tse4.mm.bing.net/th/id/OIP.jDcn4x7eTOP8DqccTSTPsAHaDt?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
-    id: 24,
+    id: 22,
     name: "Prisma",
-    description: "A type-safe ORM for working with databases in modern applications.",
+    description:
+      "A type-safe ORM for working with databases in modern applications.",
     category: "Backend",
     url: "https://www.prisma.io",
     icon: "Database",
-    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    image:
+      "https://images.seeklogo.com/logo-png/44/1/prisma-logo-png_seeklogo-441035.png",
   },
   {
-    id: 25,
+    id: 23,
     name: "GraphQL",
     description: "A query language and runtime for flexible API development.",
     category: "Backend",
     url: "https://graphql.org",
     icon: "Network",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+    image: "https://davidwalsh.name/demo/graphql-intro/graphql.png",
   },
 
   // AI/ML
   {
-    id: 26,
+    id: 24,
     name: "Google Colab",
-    description: "A cloud-based notebook environment for Python and machine learning.",
+    description:
+      "A cloud-based notebook environment for Python and machine learning.",
     category: "AI/ML",
     url: "https://colab.research.google.com",
     icon: "Notebook",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    image:
+      "https://www.marketing-branding.com/wp-content/uploads/2020/07/google-colaboratory-colab-guia-completa-1024x683.jpg",
   },
   {
-    id: 27,
+    id: 25,
     name: "Weights & Biases",
-    description: "Track experiments, visualize metrics, and manage ML workflows.",
+    description:
+      "Track experiments, visualize metrics, and manage ML workflows.",
     category: "AI/ML",
     url: "https://wandb.ai",
     icon: "ChartLine",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+    image:
+      "https://mms.businesswire.com/media/20240418287123/en/1876265/22/logo_Weights_Biases_black_and_gold_1_Logo_(1)_(1).jpg",
   },
   {
-    id: 28,
+    id: 26,
     name: "Ollama",
     description: "Run and manage open-source large language models locally.",
     category: "AI/ML",
     url: "https://ollama.com",
     icon: "Brain",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
+    image:
+      "https://tse3.mm.bing.net/th/id/OIP.HpC6UVYgkOT7HCb01mao1AAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
-    id: 29,
+    id: 27,
     name: "LangChain",
     description: "Build applications powered by large language models.",
     category: "AI/ML",
     url: "https://www.langchain.com",
     icon: "Link",
-    image: "https://images.unsplash.com/photo-1676299081847-824916de030a",
+    image:
+      "https://tse2.mm.bing.net/th/id/OIP.nu7ZXSdSXeo6aCLEJYoZpgHaD4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
 
   // Design
   {
-    id: 30,
+    id: 28,
     name: "Behance",
     description: "Explore creative portfolios and discover design inspiration.",
     category: "Design",
     url: "https://www.behance.net",
     icon: "Palette",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5",
-  },
-  {
-    id: 31,
-    name: "Coolors",
-    description: "Generate and explore beautiful color palettes for your projects.",
-    category: "Design",
-    url: "https://coolors.co",
-    icon: "Palette",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+    image:
+      "https://i.pinimg.com/736x/1d/59/4c/1d594c07a782fabf27334495834acdf7.jpg",
   },
 
   // DevOps
   {
-    id: 32,
+    id: 29,
     name: "Vercel",
-    description: "Deploy frontend applications with automated builds and previews.",
+    description:
+      "Deploy frontend applications with automated builds and previews.",
     category: "DevOps",
     url: "https://vercel.com",
     icon: "Triangle",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
+    image: "https://logowik.com/content/uploads/images/t_vercel1868.jpg",
   },
   {
-    id: 33,
+    id: 30,
     name: "Netlify",
     description: "Build, deploy, and host modern web applications.",
     category: "DevOps",
     url: "https://www.netlify.com",
     icon: "Cloud",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image: "https://logowik.com/content/uploads/images/t_netlify9261.jpg",
   },
   {
-    id: 34,
+    id: 31,
     name: "GitHub",
     description: "Host code repositories and collaborate on software projects.",
     category: "DevOps",
     url: "https://github.com",
     icon: "Github",
-    image: "https://images.unsplash.com/photo-1556075798-4825dfaaf498",
+    image:
+      "https://tse4.mm.bing.net/th/id/OIP.Jd5gRS76Ml0sX1uA6XdvXwHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
   },
   {
-    id: 35,
+    id: 32,
     name: "Kubernetes",
-    description: "Automate deployment, scaling, and management of containerized applications.",
+    description:
+      "Automate deployment, scaling, and management of containerized applications.",
     category: "DevOps",
     url: "https://kubernetes.io",
     icon: "Boxes",
-    image: "https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9",
+    image:
+      "https://images.seeklogo.com/logo-png/48/1/kubernetes-logo-png_seeklogo-480987.png",
   },
 
   // Database
   {
-    id: 36,
+    id: 33,
     name: "Redis",
-    description: "An in-memory data store used for caching and real-time applications.",
+    description:
+      "An in-memory data store used for caching and real-time applications.",
     category: "Database",
     url: "https://redis.io",
     icon: "Database",
-    image: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d",
+    image:
+      "https://images.seeklogo.com/logo-png/38/1/redis-logo-png_seeklogo-389140.png",
   },
   {
-    id: 37,
+    id: 34,
     name: "Neon",
-    description: "A serverless PostgreSQL platform built for modern applications.",
+    description:
+      "A serverless PostgreSQL platform built for modern applications.",
     category: "Database",
     url: "https://neon.tech",
     icon: "Database",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475",
+    image:
+      "https://logowik.com/content/uploads/images/t_neon-js6615.logowik.com.webp",
   },
 
   // Tools
   {
-    id: 38,
+    id: 35,
     name: "Raycast",
-    description: "A productivity launcher with extensions and developer workflows.",
+    description:
+      "A productivity launcher with extensions and developer workflows.",
     category: "Tools",
     url: "https://www.raycast.com",
     icon: "Command",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    image:
+      "https://logowik.com/content/uploads/images/t_raycast-shortcut73856.logowik.com.webp",
   },
   {
-    id: 39,
+    id: 36,
     name: "Excalidraw",
     description: "A virtual whiteboard for creating hand-drawn-style diagrams.",
     category: "Tools",
     url: "https://excalidraw.com",
     icon: "Pencil",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a",
+    image:
+      "https://cdn.prod.website-files.com/63994dae1033718bee6949ce/656649f3efcd6b1743386991_og-image-2.png    ",
   },
   {
-    id: 40,
+    id: 37,
     name: "JSON Crack",
     description: "Visualize JSON data as interactive graphs and diagrams.",
     category: "Tools",
     url: "https://jsoncrack.com",
     icon: "Braces",
-    image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4",
+    image:
+      "https://cdn-1.webcatalog.io/catalog/json-crack/json-crack-social-preview.png?v=1714774835377",
   },
   {
-    id: 41,
+    id: 38,
     name: "DevDocs",
-    description: "A unified documentation browser for multiple programming languages and tools.",
+    description:
+      "A unified documentation browser for multiple programming languages and tools.",
     category: "Tools",
     url: "https://devdocs.io",
     icon: "BookOpen",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
-  },
-  {
-    id: 42,
-    name: "Can I Use",
-    description: "Check browser compatibility for modern web technologies.",
-    category: "Tools",
-    url: "https://caniuse.com",
-    icon: "Globe",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
+    image:
+      "https://cdn.prod.website-files.com/61fc4082d1990015ce74e415/661e8bd614a1f5fef469a62d_devdocs%20documentation%20consulting.webp",
   },
 ];
 
