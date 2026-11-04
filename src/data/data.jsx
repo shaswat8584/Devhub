@@ -1,5 +1,3 @@
-import { image } from "motion/react-client";
-
 const details = [
   // Frontend
   {
@@ -98,7 +96,7 @@ const details = [
     category: "AI/ML",
     url: "https://aistudio.google.com",
     icon: "Sparkles",
-    image: "https://boluda.com/files/curso-google-ai-studio.gif",
+    image: "https://www.searchyour.ai/archivos/google-ai-studio-logo.jpg",
   },
 
   // Design
@@ -143,7 +141,7 @@ const details = [
     url: "https://github.com/features/actions",
     icon: "Workflow",
     image:
-      "https://techblog.asia-quest.jp/hubfs/TechBlog/202210-02github-thum.png",
+      "https://blog-cdn.everhour.com/blog/wp-content/uploads/2023/02/h2jfrvzrbyh1yff2n3wfu2hkqqps6x_uvqo.jpg",
   },
 
   // Database

@@ -21,15 +21,15 @@ const Navbar = ({ onAddResource }) => {
         scrolled ? "bg-surface/70 backdrop-blur-md" : "bg-bg"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 sm:py-4">
         <a href="#" className="flex items-center gap-2">
-          <Code2 size={26} className="text-primary" />
-          <span className="text-xl font-bold">
+          <Code2 size={24} className="text-primary sm:h-[26px] sm:w-[26px]" />
+          <span className="text-lg font-bold sm:text-xl">
             Dev<span className="text-primary">Hub</span>
           </span>
         </a>
 
-        <div className="flex items-center gap-6">
+        <div className="flex items-center gap-3 sm:gap-6">
           {/* <a
             href="#resources"
             className="text-muted transition-colors hover:text-text"
@@ -46,7 +46,7 @@ const Navbar = ({ onAddResource }) => {
 
           <button
             onClick={onAddResource}
-            className="rounded-lg bg-primary px-4 py-2 font-medium text-white transition hover:bg-violet-500"
+            className="rounded-lg bg-primary px-3 py-2 text-sm font-medium text-white transition hover:bg-violet-500 sm:px-4 sm:text-base"
           >
             Add Resource
           </button>
