@@ -1,11 +1,29 @@
+import { useState } from "react";
 import * as Icons from "lucide-react";
 
 export default function Cards({ resource }) {
   const Icon = Icons[resource.icon] || Icons.Code2;
+  const [isFlipped, setIsFlipped] = useState(false);
+
+  const handleCardClick = (e) => {
+    // Don't flip when clicking the Open link
+    if (e.target.closest("a")) return;
+
+    // Enable tap-to-flip on touch devices
+    if (window.matchMedia("(hover: none), (pointer: coarse)").matches) {
+      setIsFlipped((prev) => !prev);
+    }
+  };
 
   return (
-    <div className="group relative mx-auto h-72 w-full min-w-0 [perspective:1000px]">
-      <div className="relative h-full w-full [transform-style:preserve-3d] transition-transform duration-500 group-hover:[transform:rotateY(180deg)]">
+    <div
+      className="group relative mx-auto h-72 w-full min-w-0 cursor-pointer [perspective:1000px]"
+      onClick={handleCardClick}
+    >
+      <div
+        data-flipped={isFlipped}
+        className="relative h-full w-full [transform-style:preserve-3d] transition-transform duration-500 group-hover:[transform:rotateY(180deg)] data-[flipped=true]:[transform:rotateY(180deg)]"
+      >
         {/* Front */}
         <div className="absolute inset-0 flex flex-col rounded-2xl border border-border bg-surface p-5 text-text [backface-visibility:hidden]">
           <div className="flex min-h-0 flex-1 items-center justify-center overflow-hidden rounded-xl border border-border">
@@ -22,9 +40,8 @@ export default function Cards({ resource }) {
 
           <div className="flex items-center gap-3 pt-4">
             <Icon size={24} className="shrink-0 text-primary" />
-            <h2 className=" text-lg font-semibold">{resource.name}</h2>
-             <p className="ml-auto text-sm text-muted"> • {resource.category}</p>
-
+            <h2 className="text-lg font-semibold">{resource.name}</h2>
+            <p className="ml-auto text-sm text-muted">• {resource.category}</p>
           </div>
         </div>
 

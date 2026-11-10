@@ -10,19 +10,42 @@ export default function CardsSection({ addedResources = [] }) {
 
   const allResources = [...details, ...addedResources];
 
-  const filteredResources = allResources.filter((resource) => {
-    const matchesCategory =
-      activeCategory === "All" || resource.category === activeCategory;
+  // const filteredResources = allResources.filter((resource) => {
+  //   const matchesCategory =
+  //     activeCategory === "All" || resource.category === activeCategory;
 
-    const query = searchQuery.toLowerCase().trim();
+  //   const query = searchQuery.toLowerCase().trim();
 
-    const matchesSearch =
-      resource.name.toLowerCase().includes(query) ||
-      resource.description.toLowerCase().includes(query) ||
-      resource.category.toLowerCase().includes(query);
+  //   const matchesSearch = resource.name.toLowerCase().includes(query);
 
-    return matchesCategory && matchesSearch;
-  });
+  //   return matchesCategory && matchesSearch;
+  // });
+  const filteredResources = allResources
+    .filter((resource) => {
+      const matchesCategory =
+        activeCategory === "All" || resource.category === activeCategory;
+
+      const query = searchQuery.toLowerCase().trim();
+
+      const matchesSearch = resource.name.toLowerCase().includes(query);
+
+      return matchesCategory && matchesSearch;
+    })
+    .sort((a, b) => {
+      const query = searchQuery.toLowerCase().trim();
+
+      const getScore = (resource) => {
+        const name = resource.name.toLowerCase();
+
+        if (name === query) return 3;
+        if (name.startsWith(query)) return 2;
+        if (name.includes(query)) return 1;
+
+        return 0;
+      };
+
+      return getScore(b) - getScore(a);
+    });
 
   return (
     <section id="resources" className="mx-auto max-w-7xl px-6 py-16">
@@ -33,7 +56,6 @@ export default function CardsSection({ addedResources = [] }) {
           Discover useful tools and resources for developers.
         </p>
       </div>
-
       {/* Search */}
       <input
         type="text"
@@ -42,7 +64,6 @@ export default function CardsSection({ addedResources = [] }) {
         placeholder="Search resources..."
         className="mb-6 w-full rounded-lg border border-border bg-surface p-3 text-text outline-none focus:border-primary"
       />
-
       {/* Categories */}
       <div id="categories" className="mb-8 flex flex-wrap gap-3">
         {["All", ...categories].map((category) => (
@@ -59,13 +80,11 @@ export default function CardsSection({ addedResources = [] }) {
           </button>
         ))}
       </div>
-
       {/* Result Count */}
       <p className="mb-5 text-sm text-muted">
-      Showing {filteredResources.length} of {allResources.length} resources
-      </p> {/* Results Count */}
-     
-
+        Showing {filteredResources.length} of {allResources.length} resources
+      </p>{" "}
+      {/* Results Count */}
       {/* Cards */}
       {filteredResources.length > 0 ? (
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -78,7 +97,6 @@ export default function CardsSection({ addedResources = [] }) {
       ) : (
         <div className="py-16 text-center text-muted">No resources found.</div>
       )}
-     
     </section>
   );
 }
