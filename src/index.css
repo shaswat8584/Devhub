@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss";
 
 @theme {
   --color-bg: #0b0d12;
@@ -20,7 +20,112 @@
 
 @utility px-auto {
     @apply px-6 md:px-12 lg:px-24 xl:px-40;
+} */
+
+/* CYAN THEME */
+@import "tailwindcss";
+
+@theme {
+ 
+  --color-bg: #0b1117;
+  --color-surface: #111c24;
+  --color-surface-hover: #1b2b35;
+
+  --color-primary: #06b6d4;
+  --color-secondary: #2dd4bf;
+  --color-accent: #a3e635;
+
+  --color-text: #e6f1f5;
+  --color-muted: #8ba3ad;
+
+  
+  --color-border: #263943; 
 }
+
+@layer base {
+  body {
+    @apply text-text antialiased;
+    background-color: var(--color-bg);
+  }
+
+  ::selection {
+    background-color: #06b6d4;
+    color: #0b1117;
+  }
+} 
+
+@utility px-auto {
+  @apply px-6 md:px-12 lg:px-24 xl:px-40;
+}
+
+
+/* Crimson Theme */
+
+/* 
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #110C10;
+  --color-surface: #1C141B;
+  --color-surface-hover: #291720;
+
+  --color-primary: #E11D48;
+  --color-secondary: #FDA4AF;
+
+  --color-text: #FCE7F3;
+  --color-muted: #B9A3AF;
+  --color-border: #59303E;
+}
+
+@layer base {
+  body {
+    @apply text-text antialiased;
+    background-color: var(--color-bg);
+  }
+
+  ::selection {
+    background-color: #E11D48;
+    color: #FFFFFF;
+  }
+}
+
+@utility px-auto {
+  @apply px-6 md:px-12 lg:px-24 xl:px-40;
+} */
+
+/* Arctic Theme */
+/* 
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0F172A;
+  --color-surface: #172338;
+  --color-surface-hover: #24364F;
+
+  --color-primary: #22D3EE;
+  --color-secondary: #BAE6FD;
+
+  --color-text: #F1F5F9;
+  --color-muted: #94A3B8;
+  --color-border: #334155;
+}
+
+@layer base {
+  body {
+    @apply text-text antialiased;
+    background-color: var(--color-bg);
+  }
+
+  ::selection {
+    background-color: #22D3EE;
+    color: #0F172A;
+  }
+}
+
+@utility px-auto {
+  @apply px-6 md:px-12 lg:px-24 xl:px-40;
+} */
+
 
 /* Chrome, Edge, Safari */
 ::-webkit-scrollbar {
